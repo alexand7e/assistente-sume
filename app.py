@@ -84,11 +84,11 @@ if prompt := st.chat_input("Digite sua mensagem:"):
                     {"role": "system", "content": system_instructions},
                     {"role": "user", "content": context}
                 ],
-                temperature=1,
-                max_tokens=1024,
-                top_p=1,
-                stream=True,
-                stop=None,
+            temperature=0.15,
+            max_tokens=8192,
+            top_p=0.17,
+            stream=True,
+            stop=None,
             )
 
             response_content = ""
